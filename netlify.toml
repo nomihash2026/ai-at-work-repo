@@ -1,0 +1,72 @@
+# Deploy config for ai-at-work.au — repository root
+#
+# Netlify reads netlify.toml from the ROOT of the repo and nowhere else. A copy
+# inside the publish directory is silently ignored, which gives you a live site
+# with no redirects, no security headers and no host canonicalisation, and
+# nothing warns you. The copy in site/ exists only for drag-and-drop deploys.
+
+[build]
+  publish = "site"
+  command = "python3 build.py"
+
+# ---------------------------------------------------------------- host canon
+# One canonical host. Netlify's primary-domain setting handles the apex/www
+# split, and these force the rest so nothing ends up indexed twice.
+
+[[redirects]]
+  from = "https://www.ai-at-work.au/*"
+  to = "https://ai-at-work.au/:splat"
+  status = 301
+  force = true
+
+# The unhyphenated twin, once it's registered and pointed here. Hyphenated
+# domains leak traffic to the unhyphenated form, so this catches it rather
+# than losing it.
+[[redirects]]
+  from = "https://aiatwork.au/*"
+  to = "https://ai-at-work.au/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.aiatwork.au/*"
+  to = "https://ai-at-work.au/:splat"
+  status = 301
+  force = true
+
+# ------------------------------------------------------------------- headers
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # Two third parties now: Google Fonts, and Google Tag Manager (container
+    # GTM-5BL56Z44). GTM can load arbitrary tags, so the hosts below are the
+    # ones Google's own tags need — anything else added inside the container
+    # will be blocked here until this list is widened deliberately. If a tag
+    # silently does nothing in production, check the browser console for a CSP
+    # violation before assuming the tag is misconfigured.
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.googletagmanager.com; form-action 'self'; frame-ancestors 'self'; base-uri 'self'"
+
+# Brand assets are content-stable and referenced on every page.
+[[headers]]
+  for = "/brand/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Stylesheet and script filenames carry a content hash, so a change ships a new
+# filename and this can be cached hard.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML is cheap to revalidate and changes on every deploy.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

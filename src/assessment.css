@@ -1,0 +1,69 @@
+/* =============================================================================
+   The planning tool. Same budget as the rest of the site: one face, two
+   weights, plum and green on paper, the 1px hairline and nothing else.
+   Options are underlined lines of type, not boxes; the progress and exposure
+   readouts are the one place a filled bar is allowed, because the value being
+   read is a proportion and type alone cannot show it.
+   ========================================================================== */
+
+.intro{padding:var(--pad) 0 var(--s6)}
+.intro-in h1{max-width:18ch}
+.intro-lede{margin-top:var(--s3);font-size:var(--t2);line-height:1.45;max-width:48ch}
+.intro-meta{margin-top:var(--s6);color:var(--plum-72);max-width:52ch;padding-left:var(--s4)}
+.intro-meta b{display:block;font-weight:400;font-style:italic;margin-bottom:var(--s1)}
+
+.stage{padding:0 0 var(--pad)}
+.card{max-width:46rem}
+
+/* ------------------------------------------------------------- progress --*/
+.prog{display:grid;gap:var(--s2);margin-bottom:var(--s6)}
+.prog-n{color:var(--plum-72)}
+.prog-rail{display:block;height:1px;background:var(--plum-14)}
+.prog-fill{display:block;height:1px;background:var(--green);transition:width .4s ease}
+
+/* ------------------------------------------------------------- questions --*/
+/* ------------------------------------------------------------------ plan --*/
+.plan{display:grid;gap:var(--s8)}
+.verdict-for{color:var(--plum-72);margin-bottom:var(--s2)}
+.verdict h2{font-size:var(--t4);line-height:1.05;text-indent:-.035em;max-width:16ch}
+.verdict p{margin-top:var(--s3);max-width:52ch}
+
+/* exposure reading — the second and last filled bar on the site */
+.gauge{margin-top:var(--s6);max-width:34rem}
+.gauge-band{margin-bottom:var(--s1)}
+.gauge-name{font-weight:600}
+.gauge-rail{display:block;height:1px;background:var(--plum-14)}
+.gauge-fill{display:block;height:1px;background:var(--green)}
+
+.blk{display:grid;gap:var(--s3)}
+.blk h3{margin-bottom:0}
+.blk-lede{color:var(--plum-72);max-width:54ch}
+
+.reasons{margin:0;padding-left:1.4rem;display:grid;gap:var(--s2);max-width:54ch}
+
+.mods{display:grid;gap:var(--s5);margin:0;padding:0;list-style:none;counter-reset:m}
+.mods li{counter-increment:m;display:grid;grid-template-columns:3rem minmax(0,1fr);gap:var(--s3);align-items:baseline}
+.mods li::before{content:counter(m);color:var(--plum-72)}
+.mod-name{font-weight:600}
+.mod-why{color:var(--plum-72);grid-column:2;max-width:52ch}
+
+.tools{display:grid;gap:var(--s6);grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+.tool-sub{color:var(--plum-72);margin-bottom:var(--s1)}
+.tool h4{font-size:var(--t2);font-weight:600;letter-spacing:-.03em;line-height:1.15;margin-bottom:var(--s2)}
+.tool ul{margin:0;padding-left:1.4rem;display:grid;gap:var(--s1);color:var(--plum-72)}
+
+.line{display:grid;gap:var(--s1);padding:var(--s3) 0;border-bottom:1px solid var(--plum-14)}
+.line-src{color:var(--plum-72)}
+.bound{margin-top:var(--s4);padding-left:var(--s4);color:var(--plum-72);max-width:54ch}
+
+.capture{margin-top:var(--s4)}
+.capture-note{color:var(--plum-72);max-width:52ch;margin-bottom:var(--s4)}
+.done{max-width:52ch}
+.foot{margin-top:var(--s6);color:var(--plum-72)}
+
+@media (max-width:64rem){
+  .mods li{grid-template-columns:1fr;gap:var(--s1)}
+  .mods li::before{margin-bottom:0}
+  .mod-why{grid-column:1}
+  .tools{grid-template-columns:1fr}
+}

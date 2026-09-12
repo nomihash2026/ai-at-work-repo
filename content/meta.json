@@ -1,0 +1,639 @@
+{
+ "/about/": {
+  "title": "About AI at work",
+  "description": "Who we are, how we work, and what we won&#x27;t take on. Practical AI training for Australian businesses, tool-neutral by design.",
+  "canonical": "https://ai-at-work.au/about/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 286
+ },
+ "/about/why-two-tools/": {
+  "title": "Why we teach two tools \u2014 AI at work",
+  "description": "Most AI training teaches one tool and becomes a sales channel for it. The case for teaching Claude and ChatGPT side by side, tool-neutral.",
+  "canonical": "https://ai-at-work.au/about/why-two-tools/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 314
+ },
+ "/assessment/": {
+  "title": "Build your AI training plan \u2014 AI at work",
+  "description": "Nine questions about how your business actually runs. Get a training plan ordered for your work, a reading on where you&#x27;re exposed, and one clear place to start. Free, no account.",
+  "canonical": "https://ai-at-work.au/assessment/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI training plan builder",
+    "url": "https://ai-at-work.au/assessment/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web browser",
+    "offers": {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "AUD"
+    },
+    "description": "Nine questions about how an Australian business runs, returning a training plan ordered for its work and a reading on current AI exposure."
+   }
+  ],
+  "words": 313
+ },
+ "/case-studies/": {
+  "title": "What engagements look like \u2014 AI at work",
+  "description": "The shape of a workshop, a workflow build and a policy engagement, described honestly. Named client work will be published only with consent.",
+  "canonical": "https://ai-at-work.au/case-studies/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 336
+ },
+ "/contact/": {
+  "title": "Contact \u2014 AI at work",
+  "description": "Get in touch about AI training for your team, an AI policy and audit, or a workflow built with you. Sydney-based, working Australia-wide.",
+  "canonical": "https://ai-at-work.au/contact/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 181
+ },
+ "/guides/getting-your-team-started/": {
+  "title": "Getting your team started with AI \u2014 AI at work",
+  "description": "A four-week order of operations for a business where nobody has done this before: decide the tier, write the rule, pick three jobs, then teach the method.",
+  "canonical": "https://ai-at-work.au/guides/getting-your-team-started/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 353
+ },
+ "/guides/": {
+  "title": "Guides \u2014 AI at work",
+  "description": "Free, practical guides on getting a team started with AI, privacy basics for Australian small business, and what should never go into an AI tool.",
+  "canonical": "https://ai-at-work.au/guides/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 169
+ },
+ "/guides/privacy-basics/": {
+  "title": "Privacy basics for Australian small business \u2014 AI at work",
+  "description": "What the Australian Privacy Principles mean in practice when staff paste client information into an AI tool, and the four decisions that keep you on the right side.",
+  "canonical": "https://ai-at-work.au/guides/privacy-basics/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 370
+ },
+ "/guides/what-never-goes-in/": {
+  "title": "What never goes in an AI tool \u2014 AI at work",
+  "description": "The five categories that belong on every business&#x27;s never list, how to write yours in twenty minutes, and how to de-identify without losing the point of the document.",
+  "canonical": "https://ai-at-work.au/guides/what-never-goes-in/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 350
+ },
+ "/": {
+  "title": "AI training for Australian businesses \u2014 AI at work",
+  "description": "Practical AI training for Australian accounting practices, agencies, clinics, firms, providers and trade businesses. Claude and ChatGPT taught side by side, tool-neutral, with the privacy line made clear.",
+  "canonical": "https://ai-at-work.au/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "AI at work",
+    "url": "https://ai-at-work.au",
+    "description": "Practical AI training for Australian businesses. Claude and ChatGPT taught side by side.",
+    "areaServed": {
+     "@type": "Country",
+     "name": "Australia"
+    },
+    "serviceType": "AI training and AI policy consulting"
+   }
+  ],
+  "words": 835
+ },
+ "/industries/accounting-bookkeeping/": {
+  "title": "AI training for Australian accounting and bookkeeping practices \u2014 AI at work",
+  "description": "Practical AI training for accounting and bookkeeping practices. Claude and ChatGPT taught side by side, with the client-data line settled first. Built for practice owners and managers.",
+  "canonical": "https://ai-at-work.au/industries/accounting-bookkeeping/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Our client data is confidential.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It is, and it stays out. The tasks in the list above are drafting, chasing, restructuring and reading \u2014 none of them need a client identified. We settle that boundary in writing before the team touches a tool."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Won't it invent a tax position?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It will, confidently, which is exactly why tax positions are on the never list. The training is about the writing and reading around the technical work, not the technical judgement."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "My team will use it to avoid learning.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "That is a real risk with juniors and it gets addressed directly \u2014 the rule taught is that you have to be able to defend the output, so the reviewer's job doesn't get harder."
+      }
+     }
+    ]
+   }
+  ],
+  "words": 805
+ },
+ "/industries/allied-health/": {
+  "title": "AI training for Australian allied health clinics \u2014 AI at work",
+  "description": "AI training for allied health clinics, with the privacy line settled first. Built for practice owners and principals who carry the risk. Claude and ChatGPT taught side by side.",
+  "canonical": "https://ai-at-work.au/industries/allied-health/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Isn't this a privacy breach waiting to happen?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It is, if nobody has drawn the line. That's why the line comes first: which tool, which tier, which records, written down, before any productivity content."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "My clinicians are already pasting notes in.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Assume they are. That's the reason to move now, and the audit part of the engagement is designed to find out without turning it into a disciplinary process."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "We can't afford clinician time out of the diary.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Which is why the first session is short and aimed at the people who set the rules, not the whole clinic."
+      }
+     }
+    ]
+   }
+  ],
+  "words": 756
+ },
+ "/industries/cleaning-maintenance/": {
+  "title": "AI for cleaning and property maintenance businesses \u2014 AI at work",
+  "description": "Quoting, scheduling messages, site reports and staff instructions for commercial cleaning and property maintenance businesses. Built with you on your own jobs.",
+  "canonical": "https://ai-at-work.au/industries/cleaning-maintenance/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "My staff barely read the instructions now.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "That's usually a writing problem rather than a reading one, and it's the cheapest thing on this list to fix."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Tenders are too specific for AI.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The specific parts are yours. The structure, the repeated content and the compliance schedule are not, and they're most of the document."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "We're too busy to change anything.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Then we build one thing \u2014 usually the monthly report or the quote \u2014 and leave the rest alone."
+      }
+     }
+    ]
+   }
+  ],
+  "words": 672
+ },
+ "/industries/": {
+  "title": "AI training by industry \u2014 AI at work",
+  "description": "AI training tracks built from the real tasks of Australian accounting practices, real estate agencies, allied health clinics, law firms, NDIS providers, trades and cleaning businesses.",
+  "canonical": "https://ai-at-work.au/industries/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 485
+ },
+ "/industries/legal-conveyancing/": {
+  "title": "AI training for Australian law firms and conveyancers \u2014 AI at work",
+  "description": "AI policy, audit and training for small law firms and conveyancing practices. Your staff are already using these tools. The question is how exposed the firm is.",
+  "canonical": "https://ai-at-work.au/industries/legal-conveyancing/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "The courts are hostile to this.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Courts are hostile to unverified citations and undisclosed use, which is a different thing. The current practice notes in your jurisdiction are the starting material for the policy, not an obstacle to it."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "We'd rather just ban it.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A ban you can't enforce is worse than a rule people follow. The audit tells you which one you actually have."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Our PI insurer will have views.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "They will, and a written policy is what they will ask to see. Bring them into the scoping conversation."
+      }
+     }
+    ]
+   }
+  ],
+  "words": 708
+ },
+ "/industries/ndis-providers/": {
+  "title": "AI training for NDIS and disability service providers \u2014 AI at work",
+  "description": "Documentation, policy and AI training for NDIS providers. Built around audit readiness and a rule that holds across a large casual workforce.",
+  "canonical": "https://ai-at-work.au/industries/ndis-providers/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Our support workers won't follow a policy.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Most AI policies fail because they were written for office staff. The rule taught here has to work for someone on a shift with a phone, which changes how it is written."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "We're mid-audit cycle.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "That's usually the best time. Documentation quality and evidence assembly is the work, and the audit gives it a deadline."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Isn't participant data completely off limits?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. The productivity comes from structure, consistency and de-identified drafting, not from feeding records into a tool."
+      }
+     }
+    ]
+   }
+  ],
+  "words": 687
+ },
+ "/industries/real-estate/": {
+  "title": "AI training for Australian real estate agencies and property managers \u2014 AI at work",
+  "description": "AI training for real estate agencies and property management teams. Sales and PM run as separate sessions because the work barely overlaps. Claude and ChatGPT taught side by side.",
+  "canonical": "https://ai-at-work.au/industries/real-estate/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "My agents already use ChatGPT.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Most of them do, on the free tier, with no rule about it. That's the argument for training rather than against it \u2014 the gap is not access, it's method and boundaries."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "AI listing copy all sounds the same.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It does when people accept the first draft. The session is mostly about getting output in your agency's voice and knowing which drafts to throw away."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can we put sales and PM in one session?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "You can, and half the room will be bored for half the time. The tasks barely overlap. Two shorter sessions work better."
+      }
+     }
+    ]
+   }
+  ],
+  "words": 783
+ },
+ "/industries/trades/": {
+  "title": "Same-day quoting and follow-up for trade businesses \u2014 AI at work",
+  "description": "Get quotes out the same day and follow them up without thinking about it. Built with you, on your own jobs, for electrical, plumbing, HVAC and field service businesses.",
+  "canonical": "https://ai-at-work.au/industries/trades/",
+  "robots": "index,follow",
+  "ld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "I don't have time to sit in a course.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Correct, so there isn't one. We build one workflow with you on your own jobs until it runs, and that's the engagement."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "I'm not a computer person.",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The whole thing works by talking into your phone. If you can leave a voicemail you can do this."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Won't the quotes sound generic?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "They sound like you, because we build them from the quotes you already send. That's most of the work."
+      }
+     }
+    ]
+   }
+  ],
+  "words": 706
+ },
+ "/insights/": {
+  "title": "Insights \u2014 AI at work",
+  "description": "Notes on AI in Australian business practice. Published when there&#x27;s something worth saying.",
+  "canonical": "https://ai-at-work.au/insights/",
+  "robots": "noindex,follow",
+  "ld": [],
+  "words": 97
+ },
+ "/newsletter/": {
+  "title": "Newsletter \u2014 AI at work",
+  "description": "Occasional notes on vendor changes, regulator guidance and what&#x27;s working, for Australian business owners and practice principals.",
+  "canonical": "https://ai-at-work.au/newsletter/",
+  "robots": "noindex,follow",
+  "ld": [],
+  "words": 111
+ },
+ "/privacy/": {
+  "title": "Privacy policy \u2014 AI at work",
+  "description": "What AI at work collects, why, how long it&#x27;s kept, and how to have it deleted.",
+  "canonical": "https://ai-at-work.au/privacy/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 243
+ },
+ "/resources/ai-policy-templates/": {
+  "title": "AI policy templates for Australian businesses \u2014 AI at work",
+  "description": "One-page AI policy starting points for a professional practice, a clinic, an NDIS provider and a field business. Free, no email required.",
+  "canonical": "https://ai-at-work.au/resources/ai-policy-templates/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 285
+ },
+ "/resources/": {
+  "title": "Free resources \u2014 AI at work",
+  "description": "AI policy templates, a starting prompt library and a vendor checklist. Free, no email required.",
+  "canonical": "https://ai-at-work.au/resources/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 167
+ },
+ "/resources/prompt-library/": {
+  "title": "Starting prompt library \u2014 AI at work",
+  "description": "The briefs behind the documents most Australian businesses write constantly, with the structure exposed so you can adapt rather than copy.",
+  "canonical": "https://ai-at-work.au/resources/prompt-library/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 298
+ },
+ "/resources/vendor-checklist/": {
+  "title": "AI vendor checklist \u2014 AI at work",
+  "description": "Nine questions to send any vendor adding AI features to software you already pay for, before the demo rather than after.",
+  "canonical": "https://ai-at-work.au/resources/vendor-checklist/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 275
+ },
+ "/services/advisory/": {
+  "title": "Ongoing AI advisory \u2014 AI at work",
+  "description": "A standing line for the questions that come up after the training: a new vendor feature, a policy revision, a staff member asking whether something is allowed.",
+  "canonical": "https://ai-at-work.au/services/advisory/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 202
+ },
+ "/services/": {
+  "title": "How engagements work \u2014 AI at work",
+  "description": "Four shapes of engagement: a team workshop, a done-with-you workflow build, an AI policy and audit, or ongoing advisory. Which one depends on what&#x27;s in the way.",
+  "canonical": "https://ai-at-work.au/services/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 369
+ },
+ "/services/policy-and-audit/": {
+  "title": "AI policy and audit \u2014 AI at work",
+  "description": "Find out what&#x27;s already happening with AI in your business, then write a rule people will follow. The first step for firms, clinics and providers where exposure is the real question.",
+  "canonical": "https://ai-at-work.au/services/policy-and-audit/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 328
+ },
+ "/services/team-workshop/": {
+  "title": "Team AI workshop \u2014 AI at work",
+  "description": "A half-day workshop on your own work, with reusable setups built in the room. For teams where nothing is blocking the training.",
+  "canonical": "https://ai-at-work.au/services/team-workshop/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 331
+ },
+ "/services/what-it-costs/": {
+  "title": "How we scope and price \u2014 AI at work",
+  "description": "What moves the number on an AI training engagement: team size, locations, whether policy work comes first, and how much of it is built with you.",
+  "canonical": "https://ai-at-work.au/services/what-it-costs/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 312
+ },
+ "/services/workflow-build/": {
+  "title": "Done-with-you workflow build \u2014 AI at work",
+  "description": "We take the one job costing you the most time, build it with you on real jobs until it runs, and leave you with something working rather than notes.",
+  "canonical": "https://ai-at-work.au/services/workflow-build/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 250
+ },
+ "/terms/": {
+  "title": "Terms of use \u2014 AI at work",
+  "description": "Terms covering use of this website, the assessment tool, and the limits of the information published here.",
+  "canonical": "https://ai-at-work.au/terms/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 236
+ },
+ "/tools/chatgpt/custom-setups/": {
+  "title": "ChatGPT custom setups and saved instructions \u2014 AI at work",
+  "description": "How to hold your context, examples and standing rules in ChatGPT so the team gets consistent output without rebuilding the prompt.",
+  "canonical": "https://ai-at-work.au/tools/chatgpt/custom-setups/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 237
+ },
+ "/tools/chatgpt/": {
+  "title": "What ChatGPT is better at \u2014 AI at work",
+  "description": "Where ChatGPT wins in day-to-day business work: volume and speed, voice notes into drafts, and photo-driven tasks in the field.",
+  "canonical": "https://ai-at-work.au/tools/chatgpt/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 257
+ },
+ "/tools/chatgpt/voice-to-draft/": {
+  "title": "Voice note to finished draft \u2014 AI at work",
+  "description": "The highest-value AI habit for anyone who works in a vehicle: dictate the job, get a written quote, note or report out of it before you&#x27;re home.",
+  "canonical": "https://ai-at-work.au/tools/chatgpt/voice-to-draft/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 303
+ },
+ "/tools/claude/": {
+  "title": "What Claude is better at \u2014 AI at work",
+  "description": "Where Claude earns its place in a small business: long documents, consistent voice across many drafts, and reasoning with several moving parts.",
+  "canonical": "https://ai-at-work.au/tools/claude/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 266
+ },
+ "/tools/claude/long-documents/": {
+  "title": "Claude for long documents \u2014 AI at work",
+  "description": "A working method for contracts, bundles, rulings and reports: named questions, cited locations, and the checks that catch a confident wrong answer.",
+  "canonical": "https://ai-at-work.au/tools/claude/long-documents/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 261
+ },
+ "/tools/claude/projects/": {
+  "title": "Claude Projects as reusable setups \u2014 AI at work",
+  "description": "How to set up a Project that holds your context, examples and rules so nobody rebuilds the prompt every time.",
+  "canonical": "https://ai-at-work.au/tools/claude/projects/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 235
+ },
+ "/tools/": {
+  "title": "Claude and ChatGPT, taught side by side \u2014 AI at work",
+  "description": "We teach two tools and sell neither. How Claude and ChatGPT differ in practice, and why tier and data handling is the first conversation, not the last.",
+  "canonical": "https://ai-at-work.au/tools/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 358
+ },
+ "/tools/tiers-and-your-data/": {
+  "title": "Tiers and what happens to your data \u2014 AI at work",
+  "description": "The question every practice principal asks first: what do Claude and ChatGPT do with what my staff type, and how does that change between free and paid tiers?",
+  "canonical": "https://ai-at-work.au/tools/tiers-and-your-data/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 374
+ },
+ "/tools/vendor-questions/": {
+  "title": "Questions to ask any AI vendor \u2014 AI at work",
+  "description": "Nine questions that work on any vendor adding AI features, from a transcription tool to your practice management software.",
+  "canonical": "https://ai-at-work.au/tools/vendor-questions/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 296
+ },
+ "/tools/which-tool/": {
+  "title": "Which tool for which job \u2014 AI at work",
+  "description": "A practical mapping from common business tasks to Claude, ChatGPT, or neither \u2014 with the reasoning, so it survives the next release.",
+  "canonical": "https://ai-at-work.au/tools/which-tool/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 344
+ },
+ "/training/choosing-your-tool/": {
+  "title": "Choosing your tool for the job \u2014 AI at work",
+  "description": "A rule of thumb for when to reach for Claude, when for ChatGPT, and when for neither \u2014 built to survive the next model release.",
+  "canonical": "https://ai-at-work.au/training/choosing-your-tool/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 348
+ },
+ "/training/": {
+  "title": "The curriculum \u2014 AI fluency for knowledge work \u2014 AI at work",
+  "description": "The six foundation modules behind every industry track: useful output, choosing your tool, long documents, reusable setups, what never goes in, and writing your team&#x27;s AI policy.",
+  "canonical": "https://ai-at-work.au/training/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 460
+ },
+ "/training/long-documents/": {
+  "title": "Working with long documents \u2014 AI at work",
+  "description": "How to use AI on contracts, bundles, rulings, strata reports and plan sets without getting a confident summary of something it didn&#x27;t read properly.",
+  "canonical": "https://ai-at-work.au/training/long-documents/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 368
+ },
+ "/training/reusable-setups/": {
+  "title": "Building reusable setups \u2014 AI at work",
+  "description": "The difference between a good training afternoon and lasting change: setups that hold your context so nobody rebuilds the prompt every time.",
+  "canonical": "https://ai-at-work.au/training/reusable-setups/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 323
+ },
+ "/training/team-ai-policy/": {
+  "title": "Writing your team's AI policy \u2014 AI at work",
+  "description": "How to write a one-page AI policy people actually follow, including the casual and shift-based part of your workforce.",
+  "canonical": "https://ai-at-work.au/training/team-ai-policy/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 341
+ },
+ "/training/useful-output/": {
+  "title": "Getting output you can actually use \u2014 AI at work",
+  "description": "Why AI first drafts are mediocre, and the four things that change them: context, examples, constraints and the habit of rejecting the first answer.",
+  "canonical": "https://ai-at-work.au/training/useful-output/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 392
+ },
+ "/training/what-never-goes-in/": {
+  "title": "What never goes in \u2014 AI at work",
+  "description": "How to draw the never list for your own business, and the de-identification habit that has to survive a busy Thursday.",
+  "canonical": "https://ai-at-work.au/training/what-never-goes-in/",
+  "robots": "index,follow",
+  "ld": [],
+  "words": 338
+ }
+}

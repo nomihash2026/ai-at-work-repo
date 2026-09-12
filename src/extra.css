@@ -1,0 +1,255 @@
+/* =============================================================================
+   Figures, the enquiry form, the blog. Same budget as base.css.
+   Every box, tint, pill and coloured bar that used to live in here has been
+   deleted rather than restyled. What is left is type and space.
+   ========================================================================== */
+
+/* ---------------------------------------------------------------- artwork --
+   Removed. The SVG illustrations and post covers carried nothing the text
+   did not already say, so they no longer render. */
+.art,.imark,.cover{display:none}
+
+/* ------------------------------------------------------------------ media --
+   One image per page, one slot, directly under the hero. No border, no radius,
+   no shadow, no caption box — the image sits on the paper and the caption is
+   the same italic aside used for every other figure on the site.
+
+   A photograph goes full bleed because it is the only element on the site that
+   is allowed to touch the viewport edge, and that is what makes it read as
+   deliberate rather than dropped in. A screenshot stays in the text column,
+   because it is being read, not looked at. */
+.media{margin:0 0 var(--s8)}
+.ph{margin:0;padding:0}
+.ph img{display:block;width:100%;height:auto;object-fit:cover;background:var(--plum-14)}
+.ph figcaption{
+  width:100%;max-width:76rem;margin:var(--s3) auto 0;padding-inline:var(--gutter);
+  color:var(--plum-72);font-style:italic;
+}
+.ph figcaption span{display:block;max-width:58ch}
+
+/* wide, full bleed */
+.media[data-ratio="wide"] .ph img{aspect-ratio:16/9}
+
+/* portrait, held to a column and left-aligned with everything else */
+.media[data-ratio="portrait"]{max-width:76rem;margin-inline:auto;padding-inline:var(--gutter)}
+.media[data-ratio="portrait"] .ph img{aspect-ratio:4/5;max-width:26rem}
+.media[data-ratio="portrait"] .ph figcaption{max-width:none;margin-inline:0;padding-inline:0}
+
+/* screenshots read as evidence: in the column, never bled */
+.media[data-kind="screen"]{max-width:76rem;margin-inline:auto;padding-inline:var(--gutter)}
+.media[data-kind="screen"] .ph img{aspect-ratio:auto;max-width:62rem}
+.media[data-kind="screen"] .ph figcaption{max-width:none;margin-inline:0;padding-inline:0}
+
+@media (max-width:64rem){
+  .media{margin-bottom:var(--s7)}
+  .media[data-ratio="wide"] .ph img{aspect-ratio:4/3}
+}
+@media print{ .media{display:none} }
+
+/* ---------------------------------------------------------------- figures --*/
+.fig{margin:var(--s7) 0;padding:0}
+.fig figcaption{margin-top:var(--s3);color:var(--plum-72);font-style:italic;max-width:58ch}
+
+/* session clock — was a bordered card, now a time column */
+.clk{margin-top:var(--s2)}
+.clk h3{margin-bottom:var(--s5)}
+.clk-list{list-style:none;margin:0;padding:0;display:grid;gap:var(--s4)}
+.clk-list li{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:var(--s4);align-items:baseline}
+.clk-t{color:var(--plum-72)}
+.clk-b strong{font-weight:600;display:block}
+.clk-b span{display:block;margin-top:var(--s1);color:var(--plum-72)}
+
+/* goes in / never goes in — two columns of type, no panel, no tint */
+.spl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s6)}
+.spl-col{padding:0}
+.spl-col h4{font-size:var(--t2);font-weight:600;letter-spacing:-.03em;margin-bottom:var(--s3);line-height:1.15}
+.spl-col ul{margin:0;padding-left:1.4rem;display:grid;gap:var(--s2)}
+.spl-col[data-tone="stop"] li{color:var(--plum-72)}
+
+/* engagement arc */
+.arc{list-style:none;counter-reset:arc;margin:0;padding:0;display:grid;gap:var(--s6);grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.arc li{counter-increment:arc}
+.arc li::before{content:counter(arc);color:var(--plum-72);display:block;margin-bottom:var(--s2)}
+.arc strong{font-weight:600;display:block;margin-bottom:var(--s1)}
+.arc span{color:var(--plum-72)}
+
+/* before / after — the table exception, same hairline as .kv */
+.ba{width:100%;border-collapse:collapse}
+.ba th,.ba td{text-align:left;vertical-align:top;padding:var(--s3) var(--s3) var(--s3) 0;border-bottom:1px solid var(--plum-14)}
+.ba thead th{font-weight:600;color:var(--plum-72)}
+.ba tbody th{font-weight:600;width:26%}
+
+/* checklist — the marker is the list marker, nothing is drawn */
+.chk{padding-left:var(--s4);max-width:58ch}
+.chk h3{margin-bottom:var(--s3)}
+.chk ul{margin:0;padding:0;list-style:none;display:grid;gap:var(--s2)}
+.chk li{padding-left:1.4rem;position:relative}
+.chk li::before{content:"—";position:absolute;left:0;color:var(--plum-72)}
+
+/* ------------------------------------------------------- inline enquiry ask --
+   Was a plum panel with a green button. Now a sentence and a link. */
+.ask{margin:var(--s7) 0 0;max-width:var(--measure)}
+.ask p{max-width:52ch}
+.ask a{
+  display:inline-block;margin-top:var(--s3);padding-block:.4rem;font-weight:600;
+  text-decoration:underline;text-decoration-color:var(--green);
+  text-decoration-thickness:1px;text-underline-offset:.35em;
+}
+.ask a:hover{text-decoration-thickness:2px}
+
+/* ------------------------------------------------------------ enquiry form --
+   Inputs are underlined fields, not boxes: the hairline is the same 1px plum
+   used everywhere else, so the form introduces no new visual language. */
+.form-wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:var(--s7)}
+.eform{display:grid;gap:var(--s5);max-width:38rem}
+.eform .fld{display:grid;gap:var(--s1)}
+.eform .fld-2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s5)}
+.eform label{font-weight:600}
+.eform .hint{color:var(--plum-72)}
+.eform input,.eform select,.eform textarea{
+  font-family:inherit;font-size:var(--t1);line-height:1.6;color:var(--plum);
+  background:transparent;border:0;border-bottom:1px solid var(--plum-14);
+  border-radius:0;padding:var(--s1) 0;width:100%;
+}
+.eform select{appearance:none;padding-right:var(--s3)}
+.eform textarea{min-height:8rem;resize:vertical}
+.eform input:focus,.eform select:focus,.eform textarea:focus{
+  outline:0;border-bottom-color:var(--green);border-bottom-width:2px;padding-bottom:calc(var(--s1) - 1px);
+}
+.eform .req{color:var(--plum-72)}
+.eform button{
+  font-family:inherit;font-size:var(--t2);font-weight:600;color:var(--plum);
+  background:none;border:0;padding-block:.5rem;cursor:pointer;justify-self:start;
+  text-decoration:underline;text-decoration-color:var(--green);
+  text-decoration-thickness:1px;text-underline-offset:.35em;
+}
+.eform button:hover{text-decoration-thickness:2px}
+.eform .pot{position:absolute;left:-9999px}
+.eform .legal{color:var(--plum-72)}
+.eform .plan-note{padding-left:var(--s4);color:var(--plum-72);display:none}
+.eform .plan-note[data-has="true"]{display:block}
+.form-side{padding:0;color:var(--plum-72)}
+.form-side h3{color:var(--plum);margin-bottom:var(--s3)}
+.form-side ul{margin:0 0 var(--s5);padding-left:1.4rem;display:grid;gap:var(--s2)}
+.form-side .direct{margin-top:var(--s5)}
+.form-side a{text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:.25em;color:var(--plum)}
+
+/* ------------------------------------------------------------------- blog --
+   Was a grid of bordered cards with generated cover art. Now an index: one
+   article per line, read top to bottom. */
+.plist{display:grid;gap:var(--s6);grid-template-columns:1fr;margin-top:var(--s7);max-width:54rem}
+.pcard{display:grid;grid-template-columns:14rem minmax(0,1fr);gap:var(--s4);align-items:baseline;color:inherit}
+.pcard-b{display:contents}
+.pcard-cat{color:var(--plum-72)}
+.pcard h3{font-size:var(--t2);line-height:1.15;letter-spacing:-.03em}
+.pcard p{color:var(--plum-72);margin-top:var(--s2);grid-column:2;max-width:52ch}
+.pcard-m{color:var(--plum-72);grid-column:2;margin-top:var(--s1)}
+.pcard:hover h3{text-decoration:underline;text-underline-offset:.2em}
+
+.post-meta{margin-top:var(--s4);color:var(--plum-72);display:flex;flex-wrap:wrap;gap:var(--s1) var(--s4)}
+.post-meta a{text-decoration:underline;text-underline-offset:.25em}
+.post-body{margin-top:var(--s8);max-width:var(--measure)}
+.post-body h2{margin:var(--s8) 0 var(--s3)}
+.post-body h3{margin:var(--s6) 0 var(--s3)}
+.post-body p{margin:var(--s4) 0 0}
+.post-body ul,.post-body ol{margin:var(--s4) 0 0;padding-left:1.4rem;display:grid;gap:var(--s2)}
+.post-body blockquote{
+  margin:var(--s6) 0;padding-left:var(--s4);font-style:italic;
+  color:var(--plum-72);max-width:56ch;
+}
+.post-body a{text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:.25em}
+
+/* category pills, decommissioned into a line of links */
+.cats{display:block;margin-top:var(--s4);list-style:none;padding:0}
+.cats li{display:inline}
+.cats li + li::before{content:" · ";color:var(--plum-72)}
+.cats a{text-decoration:underline;text-underline-offset:.25em;text-decoration-color:var(--plum-14)}
+.cats a[aria-current="page"],.cats a:hover{text-decoration-color:var(--green)}
+
+.rel{margin-top:var(--s8);padding-top:var(--s6);border-top:1px solid var(--plum-14)}
+
+/* -------------------------------------------------------------- thank you --*/
+.ty{max-width:46rem}
+.ty .arc{margin-top:var(--s6)}
+
+@media (max-width:64rem){
+  .form-wrap,.spl,.pcard{grid-template-columns:1fr}
+  .pcard{gap:var(--s1)}
+  .pcard p,.pcard-m{grid-column:1}
+  .pcard-cat{order:-1}
+  .clk-list li{grid-template-columns:1fr;gap:var(--s1)}
+  .eform .fld-2{grid-template-columns:1fr}
+  .ba tbody th{width:auto}
+}
+@media print{
+  .ask,.eform button{display:none}
+}
+
+/* ------------------------------------------------------- prompt specimens --
+   A prompt is text, so it is set as text. The label is the same italic aside
+   used for every caption on the site and the indent is the same one used by
+   .note and .chk, so this introduces no new visual language. */
+.pr{display:grid;gap:var(--s6)}
+.pr-item{padding-left:var(--s4)}
+.pr-lab{font-style:italic;color:var(--plum-72);margin-bottom:var(--s2)}
+.pr-txt{max-width:58ch;white-space:pre-line}
+.pr-out{margin-top:var(--s3);color:var(--plum-72);max-width:58ch}
+.wh-h{margin-bottom:var(--s4)}
+.fig-where .spl{gap:var(--s6)}
+
+/* =========================================================== tool primitives ==
+   Shared by the assessment and the prompt builder, defined once here rather
+   than twice in two tool stylesheets, so the two tools cannot drift apart.
+   Options are underlined lines of type; fields are underlined, never boxed.
+   ========================================================================== */
+fieldset.bd-step,.card fieldset{border:0;margin:0;padding:0;min-width:0}
+.card legend{
+  display:block;padding:0;font-size:var(--t3);font-weight:600;line-height:1.1;
+  letter-spacing:-.03em;text-indent:-.03em;max-width:22ch;margin-bottom:var(--s3);
+}
+.card h2{margin-bottom:var(--s3);max-width:22ch}
+.q-help{color:var(--plum-72);max-width:52ch;margin-bottom:var(--s5)}
+.hint{color:var(--plum-72)}
+
+.opts{display:grid;gap:0;margin-bottom:var(--s5)}
+.opt{
+  display:block;cursor:pointer;padding:var(--s3) 0;
+  border-bottom:1px solid var(--plum-14);line-height:1.5;
+}
+.opt:first-child{border-top:1px solid var(--plum-14)}
+.opt input{position:absolute;opacity:0;width:0;height:0}
+.opt span{display:block;max-width:54ch}
+.opt small{display:block;color:var(--plum-72);margin-top:var(--s1)}
+.opt:hover{color:var(--plum)}
+.opt:hover span{text-decoration:underline;text-underline-offset:.25em;text-decoration-color:var(--plum-14)}
+.opt:has(input:checked) span{
+  font-weight:600;text-decoration:underline;text-underline-offset:.25em;
+  text-decoration-color:var(--green);text-decoration-thickness:2px;
+}
+.opt:has(input:focus-visible){outline:2px solid var(--green);outline-offset:4px}
+
+.fields{display:grid;gap:var(--s4);margin-bottom:var(--s5)}
+.field{display:grid;gap:var(--s1)}
+.field label{font-weight:600}
+.field input,.field select,.field textarea{
+  font-family:inherit;font-size:var(--t1);color:var(--plum);background:transparent;
+  border:0;border-bottom:1px solid var(--plum-14);border-radius:0;padding:var(--s1) 0;width:100%;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:0;border-bottom-color:var(--green);border-bottom-width:2px;padding-bottom:calc(var(--s1) - 1px);
+}
+.err{color:var(--plum);font-style:italic}
+
+.actions{display:flex;flex-wrap:wrap;gap:var(--s4);align-items:baseline;margin-top:var(--s5)}
+.actions .btn-primary,.actions .btn-quiet{
+  font-family:inherit;font-size:var(--t1);font-weight:600;color:var(--plum);
+  background:none;border:0;padding-block:.6rem;cursor:pointer;
+  text-decoration:underline;text-decoration-color:var(--green);
+  text-decoration-thickness:1px;text-underline-offset:.35em;
+}
+.actions .btn-quiet{font-weight:400;color:var(--plum-72);text-decoration-color:var(--plum-14)}
+.actions .btn-primary:hover,.actions .btn-quiet:hover{text-decoration-thickness:2px}
+
+@media (max-width:64rem){
+  .opts{gap:0}
+}

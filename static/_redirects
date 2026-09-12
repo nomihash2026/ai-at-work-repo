@@ -1,0 +1,74 @@
+# Route handling for ai-at-work.au
+#
+# Every page is written as <route>/index.html, so trailing slashes are the
+# canonical form. Netlify's pretty-URL handling serves /about/ from
+# /about/index.html automatically; these rules cover the cases it doesn't.
+#
+# Hand-maintained: build.py never writes this file, so rebuilding can't
+# clobber it.
+
+# Non-slashed requests to the canonical slashed form.
+/about              /about/              301!
+/assessment         /assessment/         301!
+/contact            /contact/            301!
+/industries         /industries/         301!
+/guides             /guides/             301!
+/resources          /resources/          301!
+/services           /services/           301!
+/tools              /tools/              301!
+/training           /training/           301!
+/insights           /insights/           301!
+/case-studies       /case-studies/       301!
+/privacy            /privacy/            301!
+/terms              /terms/              301!
+/thank-you          /thank-you/          301!
+
+# The newsletter page is retired: it competed with the enquiry form, which is
+# now the only conversion action on the site. Anyone following an old link
+# lands on the blog, which is what they were after.
+/newsletter         /insights/           301!
+/newsletter/        /insights/           301!
+/subscribe          /insights/           301
+
+# Enquiry paths people type or bookmark.
+/enquire            /contact/            301
+/enquiry            /contact/            301
+/get-in-touch       /contact/            301
+/book               /contact/            301
+/booking            /contact/            301
+/call               /contact/            301
+
+# Common inbound guesses, so a mistyped or shared link lands somewhere useful
+# rather than on a 404.
+/pricing            /services/what-it-costs/    301
+/prices             /services/what-it-costs/    301
+/cost               /services/what-it-costs/    301
+/courses            /training/                  301
+/curriculum         /training/                  301
+/workshop           /services/team-workshop/    301
+/workshops          /services/team-workshop/    301
+/policy             /services/policy-and-audit/ 301
+/ai-policy          /resources/ai-policy-templates/ 301
+/quiz               /assessment/                301
+/plan               /assessment/                301
+/claude             /tools/claude/              301
+/chatgpt            /tools/chatgpt/             301
+/accountants        /industries/accounting-bookkeeping/  301
+/accounting         /industries/accounting-bookkeeping/  301
+/real-estate        /industries/real-estate/    301
+/allied-health      /industries/allied-health/  301
+/legal              /industries/legal-conveyancing/ 301
+/ndis               /industries/ndis-providers/ 301
+/trades             /industries/trades/         301
+/cleaning           /industries/cleaning-maintenance/ 301
+
+# Blog. Articles live at /insights/<slug>/; these catch the other spellings.
+/blog               /insights/                  301
+/articles           /insights/                  301
+/blog/:slug         /insights/:slug/            301
+/insights/tag/*     /insights/                  302
+
+# Industry routes that exist in the taxonomy but aren't published yet. They
+# return the index rather than a 404 so an early link never dead-ends, and
+# nothing on the site links to them. Non-forced, so published pages still win.
+/industries/*       /industries/                302

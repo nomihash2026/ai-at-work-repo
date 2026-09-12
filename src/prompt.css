@@ -1,0 +1,40 @@
+/* =============================================================================
+   The prompt builder. Same budget as the rest of the site.
+
+   The one thing here that is not plain body type is the assembled instruction,
+   set in a monospaced stack. That is the single defended exception on this page:
+   the output is a block of text the reader is going to copy into another
+   application, and a fixed-width face is how you signal that it is a literal
+   string rather than prose to be read for sense.
+   ========================================================================== */
+
+.bd-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s7)}
+
+.bd-ask{display:grid;gap:var(--s7)}
+.bd-step{border:0;margin:0;padding:0;min-width:0}
+.bd-step legend{
+  display:block;padding:0;font-size:var(--t2);font-weight:600;line-height:1.15;
+  letter-spacing:-.03em;margin-bottom:var(--s3);max-width:24ch;
+}
+.bd-step .q-help{color:var(--plum-72);margin-bottom:var(--s3);max-width:48ch}
+
+.bd-out{position:sticky;top:calc(var(--bar-h) + var(--s4));align-self:start}
+.bd-out h3{margin-bottom:var(--s3)}
+.bd-out .bd-h{margin-top:var(--s7)}
+.bd-empty{color:var(--plum-72);font-style:italic}
+
+.bd-prompt{
+  font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  font-size:.9375rem;line-height:1.7;white-space:pre-wrap;word-wrap:break-word;
+  margin:0;padding-left:var(--s4);color:var(--plum);max-width:62ch;
+}
+
+.bd-checks{margin:0;padding-left:1.4rem;display:grid;gap:var(--s2);color:var(--plum-72);max-width:52ch}
+.bd-warn{margin-top:var(--s5);padding-left:var(--s4);color:var(--plum-72);max-width:52ch}
+.bd-warn a{text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:.25em;color:var(--plum)}
+.bd-out p a{text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:.25em}
+
+@media (max-width:64rem){
+  .bd-grid{grid-template-columns:1fr;gap:var(--s7)}
+  .bd-out{position:static}
+}
